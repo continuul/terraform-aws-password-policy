@@ -2,26 +2,26 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://github.com/git-chglog/git-chglog
+  repository_url: https://github.com/continuul/terraform-aws-password-policy
 options:
   commits:
-    filters:
-      Type:
-        - feat
-        - fix
-        - perf
-        - refactor
+    # filters:
+    #   Type:
+    #     - feat
+    #     - fix
+    #     - perf
+    #     - refactor
   commit_groups:
-    title_maps:
-      feat: Features
-      fix: Bug Fixes
-      perf: Performance Improvements
-      refactor: Code Refactoring
+    # title_maps:
+    #   feat: Features
+    #   fix: Bug Fixes
+    #   perf: Performance Improvements
+    #   refactor: Code Refactoring
   header:
-    pattern: "^(\\w*)\\:\\s(.*)$"
+    pattern: "^((\\w+)\\s.*)$"
     pattern_maps:
-      - Type
       - Subject
+      - Type
   notes:
     keywords:
       - BREAKING CHANGE
